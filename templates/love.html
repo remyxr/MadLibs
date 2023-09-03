@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Create Love Story {% endblock %} 
+{% block content %} 
+
+<h1>&hearts; Let's Create a Love Story &hearts;</h1>
+<label for="name1"> Please enter a name for person 1:</label>
+<form action="/love_story">
+    <input type="text" placeholder="enter a name" name="name1"> <br> <br>
+    <label for="name2"> Please enter a name for person 2</label> <br>
+    <input type="text" placeholder="enter a name" name="name2"> <br> <br>
+    <label for="town">Please enter a name of a town</label> <br>
+    <input type="text" placeholder="town name" name="town"> <br> <br>
+    <label for="verb"> Please enter a verb:</label> <br>
+    <input type="text" placeholder="enter verb" name="verb"> <br> <br>
+    <label for="adverb"> Please enter an adverb:</label> <br>
+    <input type="text" placeholder="enter adverb" name="adverb"> <br>
+    <button>Submit</button>
+</form>
+
+
+{% endblock %}

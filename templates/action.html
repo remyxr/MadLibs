@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block title%} Action Story Creator {% endblock %} 
+{% block content %} 
+<h1>Let's Create an Action Story!</h1>
+<form action="/action_story">
+    <label for="name">Please enter a name</label> <br>
+    <input type="text" pleaceholder="name" name="name"> <br><br>
+    <label for="body_part">Please enter a body part</label> <br>
+    <input type="text" placeholder="body part" name="body_part"> <br> <br>
+    <label for="adjective">Enter a description of the body part</label> <br>
+    <input type="text" placeholder="adjective" name="adjective"> <br>
+    <button>Submit</button>
+</form>
+{% endblock %}

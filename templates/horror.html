@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+{% block name %} Horror Story Creator {% endblock %} 
+{% block content %} 
+<h1>Let's Creat A Horror Story!</h1>
+<form action="/horror_story">
+    <label for="name">Please Enter a girl's name</label> <br>
+    <input type="text" placeholder="girl's name" name="name"> <br><br>
+    <label for="town">Please enter the name of a town:</label><br>
+    <input type="text" placeholder="name of a town" name="town"><br><br>
+    <label for="entity">Type of entity</label><br>
+    <input type="text" placeholder="entity" name="entity"> <br>
+    <button>Submit</button>
+</form>
+{% endblock %}
